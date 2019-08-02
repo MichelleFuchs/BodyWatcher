@@ -1,0 +1,166 @@
+/**
+* HEADER
+*
+**/
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+/**
+* CONTENT
+*
+**/
+
+body {
+  min-width: 320px;
+}
+
+#root {
+  max-width: 768px; //force max width
+  margin: 0 auto;
+  height: 100vh;
+  box-shadow: 0px 0px 15px $gray-400;
+  overflow: auto;
+}
+
+main {
+  padding: 1rem;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+/**
+* CONTROL ELEMENTS & BUTTONS
+*
+**/
+
+.select {
+  -webkit-appearance: block;
+  -moz-appearance: block;
+}
+
+.add-btn {
+  float: right;
+  padding: 0px;
+
+  svg {
+    color: $primary;
+  }
+
+  &:hover {
+    svg {
+      color: $primary-dark;
+    }
+  }
+}
+
+/**
+* MY ENTRIES
+*
+**/
+
+.entries {
+  h1,
+  #sortOrder {
+    float: left;
+  }
+
+  > div {
+    clear: both;
+  }
+
+  #sortOrder {
+    padding-top: 0.2em;
+    padding-left: 1em;
+
+    svg {
+      height: 2.3rem;
+      width: auto;
+      path {
+        color: $primary;
+      }
+    }
+  }
+}
+
+.entry-list {
+  padding: 0px;
+
+  li {
+    padding: 0.2rem 0.4rem;
+    background-color: $gray-200;
+    margin: 0px;
+
+    font-size: 18px;
+    font-weight: 700;
+
+    .dateTime-list {
+      font-size: 14px;
+      font-style: italic;
+      line-height: 2em;
+    }
+
+    &:nth-child(2n + 2) {
+      background-color: $gray-100;
+    }
+
+    &:first-child {
+      border-radius: 5px 5px 0px 0px;
+    }
+    &:last-child {
+      border-radius: 0px 0px 5px 5px;
+    }
+  }
+}
+
+/**
+* CHARTS
+*
+**/
+
+.recharts-xAxis .recharts-cartesian-axis-ticks {
+  :nth-child(odd) {
+    text {
+      fill: $primary-dark;
+    }
+  }
+}
+
+.recharts-responsive-container {
+  margin-left: -7%;
+  width: 107% !important;
+}
+
+.custom-tooltip-wrapper {
+  background-color: white;
+  border: 1px solid $primary;
+  border-radius: 10px;
+  padding: 0.7em;
+
+  .value {
+    margin-bottom: 0;
+    font-weight: bold;
+  }
+}
+
+/**
+* SETTINGS
+*
+**/
+
+.settings {
+  button {
+    min-width: 200px;
+  }
+
+  label {
+    line-height: 40px;
+    margin-bottom: 0;
+  }
+
+  .row {
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,116 @@
+/**
+* GENERAL STYLES / CLASSES
+*
+**/
+.font-light {
+  color: $font-light;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.buttonless {
+  border: none;
+  background-color: transparent;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+/**
+* OVERLAYS & BOXES
+*
+**/
+
+.box {
+  display: flex;
+  flex-direction: column;
+
+  .control-label {
+    font-style: italic;
+    margin-bottom: 0;
+  }
+
+  .row {
+    margin: 3%;
+
+    > input,
+    > div {
+      width: 94% !important;
+    }
+  }
+
+  button {
+    max-width: 200px;
+    width: 70%;
+    margin: 10px auto;
+  }
+}
+
+.request-component {
+  z-index: 100;
+  position: fixed;
+  top: 0px;
+  right: -16px;
+  padding-right: 16px;
+  bottom: -16px;
+  left: 0px;
+  overflow: scroll;
+  background-color: rgba(0, 0, 0, 0.8);
+
+  .box {
+    background-color: white;
+    height: auto;
+    padding: 1rem 2.5rem;
+    border-radius: 3px;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+    margin: 50px auto;
+    position: relative;
+
+    .comment {
+      text-align: left;
+    }
+
+    .close-x {
+      position: absolute;
+      top: 0.5rem;
+      right: 0.75rem;
+
+      svg {
+        color: $gray-600;
+      }
+
+      &:hover {
+        svg {
+          color: $gray-650;
+        }
+      }
+    }
+  }
+}
+
+/**
+* OTHERS
+*
+**/
+
+.spinner-wrapper {
+  z-index: 101;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+
+  svg path {
+    fill: $gray-200;
+  }
+}

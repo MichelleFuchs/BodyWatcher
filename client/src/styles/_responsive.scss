@@ -1,0 +1,22 @@
+@media (min-width: 768px) {
+  .recharts-responsive-container {
+    margin-left: -3%;
+    width: 103% !important;
+  }
+}
+
+@media (max-width: 330px) {
+  .entry-list li {
+    .dateTime-list {
+      padding: 0;
+    }
+
+    .value-list {
+      padding: 0;
+    }
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}

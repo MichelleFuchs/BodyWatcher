@@ -1,0 +1,36 @@
+.navbar {
+  padding: 0;
+
+  .navbar-brand {
+    width: 100%;
+    margin-left: 1rem;
+  }
+
+  .nav-links {
+    width: 100%;
+
+    ul {
+      display: flex;
+      margin: 0px;
+      overflow: hidden;
+
+      li {
+        flex: 1;
+        margin: 0px;
+
+        button {
+          width: 100%;
+          border-radius: 0px;
+          padding: 8px 0px;
+          color: $font-light;
+          border: none;
+
+          &.active,
+          &:hover {
+            background-color: $primary-dark;
+          }
+        }
+      }
+    }
+  }
+}
