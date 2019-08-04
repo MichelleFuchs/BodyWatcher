@@ -4,7 +4,7 @@ This is a MERN-App for tracking your body weight, optimized for mobile screens. 
 
 For a working live demo see this heroku app (cause the server sleeps it loads a while...stay tuned ;)):
 
-[https://glacial-stream-70320.herokuapp.com/](https://glacial-stream-70320.herokuapp.com/)
+[https://bodywatcher-mf.herokuapp.com/](https://bodywatcher-mf.herokuapp.com/)
 
 Feel free to add or remove entries. You can also generate example data in the settings so you can check the features better.
 
