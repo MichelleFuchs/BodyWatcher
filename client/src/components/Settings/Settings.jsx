@@ -74,19 +74,20 @@ class Settings extends React.Component {
     this.toggleConfirmOverlay(); //close overlay
     await this.deleteAllEntries(false); //show no delete message, but delete all data
     let success = await generateData(this.props.settings.measure);
-    this.props.dataUpdated();
     await this.setState({ isLoading: false });
-    if (success)
+    if (success) {
+      this.props.dataUpdated();
       this.setState({
         message: { type: "success", msg: "Example data successfully added." }
       });
-    else
+    } else {
       this.setState({
         message: {
           type: "error",
           msg: "An error happened. You should try it again."
         }
       });
+    }
   };
 
   handleSelectChange = e => {
@@ -187,6 +188,14 @@ class Settings extends React.Component {
             />
           </div>
         </div>
+        <a
+          href="https://github.com/MichelleFuchs"
+          rel="noopener noreferrer"
+          target="_blank"
+          className="author-credits"
+        >
+          &#169; Michelle Fuchs
+        </a>
       </section>
     );
   }
